@@ -1,16 +1,40 @@
 
 const ads = [
     {
-        title: "Aenean leo",
-        imgUrl: "https://www.vm.co.mz/var/corporate/storage/images/media/images/vodacom-smart-e9/684609-1-por-MZ/Vodacom-Smart-E9.png"
+        title: "Tittle",
+        imgUrl: "https://res.cloudinary.com/hiotech-cloud/image/upload/v1644847651/hiopay/ads/1.png"
     },
     {
-        title: "In turpis",
-        imgUrl: "https://www.vm.co.mz/var/corporate/storage/images/media/images/equipment-insurance2/706170-1-eng-GB/Equipment-Insurance.png"
+        title: "Tittle",
+        imgUrl: "https://res.cloudinary.com/hiotech-cloud/image/upload/v1644847651/hiopay/ads/2.png"
     },
     {
-        title: "Lorem Ipsum",
-        imgUrl: "https://www.vm.co.mz/var/corporate/storage/images/media/images/ofertas-todahora2/703772-1-por-MZ/Ofertas-TodaHora.png"
+        title: "Tittle",
+        imgUrl: "https://res.cloudinary.com/hiotech-cloud/image/upload/v1644847651/hiopay/ads/3.png"
+    },
+    {
+        title: "Tittle",
+        imgUrl: "https://res.cloudinary.com/hiotech-cloud/image/upload/v1644847651/hiopay/ads/4.png"
+    },
+    {
+        title: "Tittle",
+        imgUrl: "https://res.cloudinary.com/hiotech-cloud/image/upload/v1644847651/hiopay/ads/5.png"
+    },
+    {
+        title: "Tittle",
+        imgUrl: "https://res.cloudinary.com/hiotech-cloud/image/upload/v1644847651/hiopay/ads/6.png"
+    },
+    {
+        title: "Tittle",
+        imgUrl: "https://res.cloudinary.com/hiotech-cloud/image/upload/v1644847651/hiopay/ads/7.png"
+    },
+    {
+        title: "Tittle",
+        imgUrl: "https://res.cloudinary.com/hiotech-cloud/image/upload/v1644847651/hiopay/ads/8.png"
+    },
+    {
+        title: "Tittle",
+        imgUrl: "https://res.cloudinary.com/hiotech-cloud/image/upload/v1644847651/hiopay/ads/9.png"
     }
 ]
 export default ads;3246

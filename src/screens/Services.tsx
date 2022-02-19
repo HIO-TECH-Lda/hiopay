@@ -21,26 +21,21 @@ const Services = ({ navigation }: Props) => {
       >
         <Carroussel />
         <OptionCard
-          message="Transferir Crédito"
+          message="Recarregar"
           navigation={navigation}
           to="CreditTransfer"
         />
         <OptionCard
-          message="Transferir Megas"
+          message="Transferir Dinheiro"
           navigation={navigation}
           to="CreditTransfer"
         />
         <OptionCard
-          message="Txuna"
+          message="Realizar Empréstimo"
           navigation={navigation}
           to="CreditTransfer"
         />
-        <OptionCard message="Puk" navigation={navigation} to="CreditTransfer" />
-        <OptionCard
-          message="Velocidade da Internet"
-          navigation={navigation}
-          to="CreditTransfer"
-        />
+
       </ScrollView>
     </View>
   );

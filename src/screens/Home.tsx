@@ -19,10 +19,10 @@ interface Props {
   navigation: any;
 }
 const colorScheme = Appearance.getColorScheme();
-let RED_COLOR = colorScheme === "dark" ? "#ee6366" : "#EF1417";
+let BLUE_COLOR = colorScheme === "dark" ? "#ee6366" : "#5271ff";
 const Home = ({ navigation }: Props) => {
   useEffect(() => {
-    RED_COLOR = colorScheme === "dark" ? "#ee6366" : "#EF1417";
+    BLUE_COLOR = colorScheme === "dark" ? "#ee6366" : "#5271ff";
   }, [colorScheme]);
   return (
     <View style={globalStyles.container}>
@@ -34,10 +34,10 @@ const Home = ({ navigation }: Props) => {
         }}
       >
         <View style={styles.userInfo}>
-          <Caption style={styles.userCaption}>22 de janeiro de 2021</Caption>
-          <Title style={styles.userName}>Olá Albertino!</Title>
+          <Caption style={styles.userCaption}>22 de Fevereiro de 2022</Caption>
+          <Title style={styles.userName}>Olá Helton!</Title>
           <Paragraph style={styles.userWellcome}>
-            Bem-Vindo ao Meu Vodacom
+            Bem-vindo(a) ao HioPay, pague suas tarifas públicas aqui com facilidade.
           </Paragraph>
         </View>
 
@@ -85,7 +85,7 @@ const Home = ({ navigation }: Props) => {
               },
             ]}
           >
-            80 MT
+            8.000,00 MT
           </Title>
           <Paragraph
             style={[
@@ -95,7 +95,7 @@ const Home = ({ navigation }: Props) => {
               },
             ]}
           >
-            aos 22 de janeiro de 2020
+            22 de Fevereiro de 2022
           </Paragraph>
         </Surface>
         <ScrollView
@@ -104,52 +104,52 @@ const Home = ({ navigation }: Props) => {
           contentContainerStyle={{ marginBottom: 20 }}
         >
           <Surface style={[styles.balance]}>
-            <Ionicons name="ios-call-outline" size={30} color={RED_COLOR} />
-            <Title style={styles.title}>1500 MT</Title>
-            <Paragraph style={styles.paragraph}>Chamadas</Paragraph>
+            <Ionicons name="school-outline" size={30} color={BLUE_COLOR} />
+            <Title style={styles.title}>Taxas</Title>
+            <Paragraph style={styles.paragraph}>de Escola</Paragraph>
           </Surface>
           <Surface style={styles.balance}>
-            <Ionicons
-              name="ios-swap-vertical-outline"
-              size={30}
-              color={RED_COLOR}
-            />
-
-            <Title style={styles.title}>200 MB</Title>
-            <Paragraph style={styles.paragraph}>Internet</Paragraph>
+            <Ionicons name="stats-chart-outline" size={30} color={BLUE_COLOR} />
+            <Title style={styles.title}>Taxas</Title>
+            <Paragraph style={styles.paragraph}>de Imposto</Paragraph>
           </Surface>
           <Surface style={styles.balance}>
-            <Ionicons
-              name="ios-chatbubbles-outline"
-              size={30}
-              color={RED_COLOR}
-            />
-            <Title style={styles.title}>30 SMS</Title>
-            <Paragraph style={styles.paragraph}>Mensagens</Paragraph>
+            <Ionicons name="people-outline" size={30} color={BLUE_COLOR} />
+            <Title style={styles.title}>Taxas</Title>
+            <Paragraph style={styles.paragraph}>de INSS</Paragraph>
+          </Surface>
+          <Surface style={styles.balance}>
+            <Ionicons name="compass-outline" size={30} color={BLUE_COLOR} />
+            <Title style={styles.title}>Taxas</Title>
+            <Paragraph style={styles.paragraph}>da Imigração</Paragraph>
+          </Surface>
+          <Surface style={styles.balance}>
+            <Ionicons name="car-outline" size={30} color={BLUE_COLOR} />
+            <Title style={styles.title}>Multas</Title>
+            <Paragraph style={styles.paragraph}> de Trânsito</Paragraph>
+          </Surface>
+          <Surface style={styles.balance}>
+            <Ionicons name="archive-outline" size={30} color={BLUE_COLOR} />
+            <Title style={styles.title}>Taxas</Title>
+            <Paragraph style={styles.paragraph}>do Tribunal</Paragraph>
+          </Surface>
+          <Surface style={styles.balance}>
+            <Ionicons name="airplane-outline" size={30} color={BLUE_COLOR} />
+            <Title style={styles.title}>Taxas</Title>
+            <Paragraph style={styles.paragraph}>da Alfândega</Paragraph>
+          </Surface>
+          <Surface style={styles.balance}>
+            <Ionicons name="albums-outline" size={30} color={BLUE_COLOR} />
+            <Title style={styles.title}>Outros</Title>
+            <Paragraph style={styles.paragraph}>Serviços</Paragraph>
           </Surface>
         </ScrollView>
 
-        <OptionCard message="Recaregar" navigation={navigation} to="Jackpot" />
-        <OptionCard
-          message="Converter Megas"
-          navigation={navigation}
-          to="Internet"
-        />
-        <OptionCard
-          message="Enviar Crédito"
-          navigation={navigation}
-          to="TopOffers"
-        />
-        <OptionCard
-          message="Extra Jackpot"
-          navigation={navigation}
-          to="ExtraJackpot"
-        />
-        <OptionCard
-          message="Ofertas Top"
-          navigation={navigation}
-          to="ExtraJackpot"
-        />
+        <OptionCard message="Recaregar" navigation={navigation} to="Profile" />
+        <OptionCard message="Transferir Dinheiro" navigation={navigation} to="Internet"/>
+        {/* <OptionCard message="Enviar Crédito" navigation={navigation} to="TopOffers"/>
+        <OptionCard message="Extra Jackpot" navigation={navigation} to="ExtraJackpot"/>
+        <OptionCard message="Ofertas Top" navigation={navigation} to="ExtraJackpot"/> */}
       </ScrollView>
     </View>
   );
@@ -177,7 +177,7 @@ const styles = StyleSheet.create({
     color: "#625d5b",
   },
   title: {
-    color: RED_COLOR,
+    color: BLUE_COLOR,
 
     fontSize: 28,
     fontFamily: "Inter_900Black",
@@ -185,10 +185,10 @@ const styles = StyleSheet.create({
   },
   paragraph: {
     fontFamily: "Inter_400Regular",
-    color: RED_COLOR,
+    color: BLUE_COLOR,
   },
   mainAccount: {
-    backgroundColor: RED_COLOR,
+    backgroundColor: BLUE_COLOR,
     padding: 20,
     borderRadius: 25,
     marginBottom: 20,
@@ -198,7 +198,7 @@ const styles = StyleSheet.create({
   balance: {
     width: 150,
     height: 200,
-    backgroundColor: "#ef141813",
+    backgroundColor: "#caebff",
     padding: 10,
     borderRadius: 25,
     marginRight: 20,

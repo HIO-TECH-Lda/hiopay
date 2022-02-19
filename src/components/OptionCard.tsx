@@ -10,13 +10,13 @@ interface Props {
 }
 const OptionCard = ({ navigation, to, message }: Props) => {
   return (
-    <TouchableNativeFeedback>
+    <TouchableNativeFeedback onPress={() => navigation.navigate(to)}>
       <Surface style={styles.wrapper}>
         <Paragraph style={styles.paragraph}>{message}</Paragraph>
         <Ionicons
           name="ios-chevron-forward-outline"
           size={24}
-          color="#ef1417"
+          color="#5271ff"
         />
       </Surface>
     </TouchableNativeFeedback>

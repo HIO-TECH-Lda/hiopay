@@ -19,9 +19,7 @@ const DrawerContent = (props: any) => {
             <View style={styles.userInfoSection}>
               <View style={{ flexDirection: "row", marginTop: 15 }}>
                 <Avatar.Image
-                  source={{
-                    uri: "https://picsum.photos/id/237/200/300",
-                  }}
+                  source={require("../../assets/images/profile2.jpeg")}
                   size={50}
                 />
                 <View
@@ -31,11 +29,11 @@ const DrawerContent = (props: any) => {
                     alignItems: "flex-start",
                   }}
                 >
-                  <Title style={styles.title}>Albertino José da Silva</Title>
-                  <Paragraph style={styles.paragraph}>842798702</Paragraph>
-                  <Pressable>
+                  <Title style={styles.title}>Helton Furau</Title>
+                  <Paragraph style={styles.paragraph}>847554622</Paragraph>
+                  {/* <Pressable>
                     <Text style={styles.font}>+ Adicionar perfil</Text>
-                  </Pressable>
+                  </Pressable> */}
                 </View>
               </View>
             </View>
@@ -60,64 +58,55 @@ const DrawerContent = (props: any) => {
             />
             <DrawerItem
               icon={({ color, size }) => (
-                <IonIcons name="ios-tv-outline" color={color} size={size} />
+                <IonIcons name="people-circle-outline" color={color} size={size} />
               )}
               labelStyle={styles.font}
-              label="Ofertas"
-              onPress={() => props.navigation.navigate("Offers")}
+              label="Meus beneficiários"
+              onPress={() => props.navigation.navigate("Beneficiaries")}
             />
-
-            <DrawerItem
-              icon={({ color, size }) => (
-                <IonIcons name="ios-gift-outline" color={color} size={size} />
-              )}
-              labelStyle={styles.font}
-              label="Oferecer"
-              onPress={() => props.navigation.navigate("Gift")}
-            />
+          
             <List.Accordion
-              title="Vlive"
-              style={{
-                backgroundColor: "white",
-                padding: 2,
-              }}
-              titleStyle={{
-                marginLeft: 6,
-                color: "#676768",
-                ...styles.font,
-              }}
+              title="Contas"
+              style={{ backgroundColor: "white", padding: 2, }}
+              titleStyle={{ marginLeft: 6, color: "#676768", ...styles.font, }}
               left={(props) => (
-                <List.Icon {...props} icon="account" color="#676768" />
+                <List.Icon {...props} icon="wallet-outline" color="#676768" />
               )}
             >
-              <List.Item
-                title="Vlive Jogos"
-                titleStyle={{
-                  marginLeft: 6,
-                  color: "#676768",
-                  ...styles.font,
-                }}
-              />
-              <List.Item
-                title="Vlive Desporto"
-                titleStyle={{
-                  marginLeft: 6,
-                  color: "#676768",
-                  ...styles.font,
-                }}
-              />
+              <List.Item title="Vista Consolidada" titleStyle={{}} />
+              <List.Item title="Saldos e Movimentos"/>
+              <List.Item title="Detalhes da Conta"/>
             </List.Accordion>
+
+            <List.Accordion
+              title="Transferências"
+              style={{ backgroundColor: "white", padding: 2, }}
+              titleStyle={{ marginLeft: 6, color: "#676768", ...styles.font, }}
+              left={(props) => (
+                <List.Icon {...props} icon="card-outline" color="#676768" />
+              )}
+            >
+              <List.Item title="Realizar Transferência" titleStyle={{}} />
+              <List.Item title="Histórico" />
+            </List.Accordion>
+            
+            <List.Accordion
+              title="Pagamentos"
+              style={{ backgroundColor: "white", padding: 2, }}
+              titleStyle={{ marginLeft: 6, color: "#676768", ...styles.font, }}
+              left={(props) => (
+                <List.Icon {...props} icon="card-outline" color="#676768" />
+              )}
+            >
+              <List.Item title="Realizar Pagamento" titleStyle={{}} />
+              <List.Item title="Agendar Pagamento" titleStyle={{}} />
+              <List.Item title="Histórico" />
+            </List.Accordion>
+            
             <List.Accordion
               title="Precisa de ajuda?"
-              style={{
-                backgroundColor: "white",
-                padding: 2,
-              }}
-              titleStyle={{
-                marginLeft: 6,
-                color: "#676768",
-                ...styles.font,
-              }}
+              style={{ backgroundColor: "white", padding: 2, }}
+              titleStyle={{ marginLeft: 6, color: "#676768", ...styles.font, }}
               left={(props) => (
                 <List.Icon {...props} icon="chat-outline" color="#676768" />
               )}
@@ -125,6 +114,7 @@ const DrawerContent = (props: any) => {
               <List.Item title="ajuda 1" titleStyle={{}} />
               <List.Item title="ajuda 2" />
             </List.Accordion>
+            
             <DrawerItem
               icon={({ color, size }) => (
                 <IonIcons name="ios-person-outline" color={color} size={size} />
@@ -133,7 +123,7 @@ const DrawerContent = (props: any) => {
               label="Meu perfil"
               onPress={() => props.navigation.navigate("Profile")}
             />
-            <DrawerItem
+            {/* <DrawerItem
               icon={({ color, size }) => (
                 <IonIcons
                   name="ios-location-outline"
@@ -144,7 +134,7 @@ const DrawerContent = (props: any) => {
               labelStyle={styles.font}
               label="Localizar Loja"
               onPress={() => props.navigation.navigate("Stores")}
-            />
+            /> */}
             <DrawerItem
               icon={({ color, size }) => (
                 <IonIcons

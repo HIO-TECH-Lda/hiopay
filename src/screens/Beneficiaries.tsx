@@ -11,7 +11,7 @@ interface Props {
 const Offers = ({ navigation }: Props) => {
   return (
     <View style={globalStyles.container}>
-      <AppBar page="Selecione o tipo de oferta" navigation={navigation} />
+      <AppBar page="Meus beneficiários" navigation={navigation} />
       <ScrollView
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{
@@ -21,18 +21,9 @@ const Offers = ({ navigation }: Props) => {
       >
         <Carroussel />
 
-        <OptionCard message="Jackpot" navigation={navigation} to="Jackpot" />
-        <OptionCard message="Internet" navigation={navigation} to="Internet" />
-        <OptionCard
-          message="Ofertas Top"
-          navigation={navigation}
-          to="TopOffers"
-        />
-        <OptionCard
-          message="Extra Jackpot"
-          navigation={navigation}
-          to="ExtraJackpot"
-        />
+        <OptionCard message="Adicionar" navigation={navigation} to="Jackpot" />
+        <OptionCard message="Ver" navigation={navigation} to="Internet" />
+
       </ScrollView>
     </View>
   );

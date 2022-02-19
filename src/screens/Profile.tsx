@@ -17,25 +17,23 @@ const Profile = ({ navigation }: Props) => {
           <View style={styles.imageWrapper}>
             <Image
               style={styles.cover}
-              source={{
-                uri: "https://picsum.photos/id/237/200/300",
-              }}
-              defaultSource={require("../../assets/images/fallback-1.jpeg")}
+              source={require("../../assets/images/profile2.jpeg")}
+              defaultSource={require("../../assets/images/profile1.jpeg")}
             />
           </View>
         </View>
-        {/* <Image source={require("../../assets/images/fallback-1.jpeg")} /> */}
+        {/* <Image source={require("../../assets/images/profile1.jpeg")} /> */}
 
         <View>
           <View style={styles.field}>
             <Caption style={styles.label}>Nome</Caption>
             <Paragraph style={styles.paragraph}>
-              Albertino José da Silva
+              Helton Furau
             </Paragraph>
           </View>
           <View style={styles.field}>
-            <Caption style={styles.label}>Meu Número</Caption>
-            <Paragraph style={styles.paragraph}>841234321</Paragraph>
+            <Caption style={styles.label}>Contacto</Caption>
+            <Paragraph style={styles.paragraph}>847554622</Paragraph>
           </View>
           <View style={styles.field}>
             <Caption style={styles.label}>Género</Caption>
@@ -44,17 +42,12 @@ const Profile = ({ navigation }: Props) => {
           <View style={styles.field}>
             <Caption style={styles.label}>Data de Nascimento</Caption>
             <Paragraph style={styles.paragraph}>
-              23 de janeiro de 2000
+              27 de Novembro de 1999
             </Paragraph>
           </View>
-          <View style={styles.field}>
-            <Caption style={styles.label}>
-              Estado de Registo do cartão SIM
-            </Caption>
-            <Paragraph style={styles.paragraph}>Completo</Paragraph>
-          </View>
-          <Button mode="contained" color="#EF1417">
-            Registar-me
+
+          <Button mode="contained" color="#5271ff">
+            Actualizar
           </Button>
         </View>
       </View>

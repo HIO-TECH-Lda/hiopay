@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "meu-vodacom",
-    "slug": "meu-vodacom",
+    "name": "HioPay",
+    "slug": "hiopay",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

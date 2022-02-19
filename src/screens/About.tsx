@@ -25,12 +25,12 @@ const About = ({ navigation }: Props) => {
         <OptionCard
           message="Termos e Condições"
           navigation={navigation}
-          to="Jackpot"
+          to="Terms"
         />
         <OptionCard
           message="Politica de Privacidade"
           navigation={navigation}
-          to="Internet"
+          to="PrivacyPolicy"
         />
         <Paragraph
           style={{
@@ -39,7 +39,7 @@ const About = ({ navigation }: Props) => {
             color: "#625d5b",
           }}
         >
-          Versao 2.0.7
+          Versao 1.0.0
         </Paragraph>
       </ScrollView>
     </View>

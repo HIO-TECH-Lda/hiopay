@@ -47,7 +47,7 @@ const Carroussel = () => {
           height: 10,
           borderRadius: 5,
           marginHorizontal: 0,
-          backgroundColor: "#EF1417",
+          backgroundColor: "#5271ff",
         }}
         inactiveDotOpacity={0.4}
         inactiveDotScale={0.6}

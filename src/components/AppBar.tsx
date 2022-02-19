@@ -43,5 +43,6 @@ const styles = StyleSheet.create({
     color: "#050505",
   },
 });
-
+// #38b6ff
+// #5271ff
 export default AppBar;

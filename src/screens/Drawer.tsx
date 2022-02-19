@@ -3,7 +3,7 @@ import React from "react";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import Home from "./Home";
 import Services from "./Services";
-import Offers from "./Offers";
+import Beneficiaries from "./Beneficiaries";
 import Gift from "./Gift";
 import Profile from "./Profile";
 import Stores from "./Stores";
@@ -27,8 +27,8 @@ const Drawer = () => {
         options={{ swipeEnabled: false }}
       />
       <DrawerNav.Screen
-        name="Offers"
-        component={Offers}
+        name="Beneficiaries"
+        component={Beneficiaries}
         options={{ swipeEnabled: false }}
       />
       <DrawerNav.Screen
